@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharmili B Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to right, #0f172a, #1e293b);
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 50px;
+            background: #020617;
+        }
+
+        header h1 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 60px 50px;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hero-text h2 {
+            font-size: 32px;
+            color: #38bdf8;
+        }
+
+        .hero-text p {
+            margin: 10px 0;
+        }
+
+        .hero img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #38bdf8;
+            box-shadow: 0 0 20px rgba(56,189,248,0.6);
+        }
+
+        .card {
+            background: #020617;
+            padding: 20px;
+            margin-top: 15px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+        }
+
+        h2 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #020617;
+        }
+
+        button {
+            background: #38bdf8;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #0ea5e9;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero img {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Sharmili B</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h2>Hello, I'm Sharmili 👋</h2>
+        <p>Computer Science Student | GATE 2028 Aspirant</p>
+        <p>Passionate about programming and problem solving</p>
+        <button onclick="alert('Email: sharmilib8@gmail.com')">Contact Me</button>
+    </div>
+
+    <!-- YOUR IMAGE -->
+    <img src="portfolio.jpg" alt="Sharmili Profile Photo">
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+        Dedicated and hardworking individual with a keen interest in software development 
+        and continuous learning.
+    </div>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <div class="card">
+        <strong>B.E Computer Science Engineering</strong><br>
+        DMI College of Engineering, Tamil Nadu<br>
+        2024 – 2028<br>
+        CGPA: 8.31
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="card">
+        Programming: C, Java, Python<br>
+        Concepts: Data Structures, Algorithms<br>
+        Tools: VS Code, Git<br>
+        Soft Skills: Problem Solving, Teamwork, Communication
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+        <strong>Student Management System</strong><br>
+        Developed using Java and SQL to manage student records efficiently.
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+        Phone: 9360838821<br>
+        Email: sharmilib8@gmail.com<br>
+        Location: Chennai, India<br>
+        LinkedIn: linkedin.com/in/sharmili
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Sharmili B | Portfolio</p>
+</footer>
+
+</body>
+</html>
